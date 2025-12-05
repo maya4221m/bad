@@ -1,0 +1,376 @@
+
+@font-face {
+    font-family: 'ElegantTypewriter';
+    src: url('font/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body, * {
+    font-family: 'ElegantTypewriter', monospace;
+}
+
+
+body {
+    margin: 0;
+    background-color: #d5cbaa; 
+    font-family: "Courier New", monospace;
+    
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+/* TOP BAR */
+.top-bar {
+    background-color: #4b2d23;
+    color: #efe4c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.nav-left a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #efe4c4;
+    font-size: 20px;
+}
+
+.logo {
+    color: #efe4c4;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.nav-left a,
+.logo {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-left a:hover,
+.logo:hover {
+    transform: scale(1.12);
+    opacity: 0.85;
+}
+
+
+
+
+
+
+/* MAIN */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 50px;
+}
+
+.left-image img {
+    width: 500px;
+    height: auto;
+}
+
+/* ABOUT */
+.about-section {
+    max-width: 500px;
+}
+
+.about-section h2 {
+    color: #4b2d23;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #000;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.listen-btn {
+    margin-top: 25px;
+    background-color: #16255a;
+    color: #efe4c4;
+    border: none;
+    padding: 15px 40px;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* BOTTOM BAR */
+.bottom-bar {
+    background-color: #4b4f40;
+    color: #e6d8b7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    position: relative;
+}
+
+
+/* BASE */
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    background-color: #e7dcbd;
+    color: #3b2f2f;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #24345f;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* important */
+}
+
+
+.hero-img {
+    width: 80%;
+    height: 400px; /* you wrote 400x */
+    background: #b3b9d6;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover; /* optional but makes it nicer */
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    color: #e7dcbd;
+    text-align: center;
+}
+
+.hero-text .download-btn {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+
+.download-btn {
+    background: #e7dcbd;
+    padding: 10px 22px;
+    border-radius: 10px;
+    color: #4a2f25;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+
+
+/* MAIN ALBUM SECTION */
+.content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tv-wrapper {
+    position: relative; /* already present, keep it */
+    width: 600px;
+}
+
+.tv-video {
+    position: absolute;
+    top: 10%;      /* slightly lower to center vertically */
+    left: 10%;     /* slightly more from the left to center horizontally */
+    width: 80%;    /* smaller width */
+    height: 75%;   /* smaller height */
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;    /* behind the TV image */
+}
+
+
+.tv-wrapper .tv-image {
+    width: 100%;
+    display: block;
+    margin: 0;
+    position: relative; /* make it stack above video */
+    z-index: 2;         /* on top of video */
+}
+
+
+
+.album-info {
+    margin: 20px auto;
+    width: fit-content;
+    text-align: left;
+}
+
+.about {
+    margin: 30px auto;
+    width: 60%;
+}
+
+.about h3 {
+    font-family: serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+body {
+    background-color: #e7dcbd;
+    font-family: "Courier New", monospace;
+    color: #3b2f2f;
+    margin: 0;
+}
+
+/* MAIN MERCH SECTION */
+.merch-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-label {
+    font-size: 20px;
+    text-align: right;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+
+/* GRID LAYOUT */
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 60px 50px;
+    justify-items: center;
+}
+
+/* ITEM CARD */
+.item-card {
+    width: 220px;
+    text-align: left;
+}
+
+.item-image {
+    width: 220px;
+    height: 220px;
+    background-color: #24345f; /* placeholder */
+}
+
+.item-title {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.price {
+    float: right;
+}
+
+.item-desc {
+    font-size: 14px;
+    margin: 5px 0 12px;
+}
+
+/* BUTTON */
+.cart-btn {
+    background: #4a5b41;
+    color: #e7dcbd;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+
+button:hover,
+.listen-btn:hover,
+.download-btn:hover,
+.cart-btn:hover{
+    transform: scale(1.06);
+}
+
+.custom-form {
+    width: 400px;
+    margin: 40px auto;
+    background-color: #efe4c4;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: "Courier New", monospace;
+    color: #4b2d23;
+}
+
+.custom-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b2d23;
+}
+
+.custom-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.custom-form input,
+.custom-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #4b2d23;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.custom-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #16255a;
+    color: #efe4c4;
+    border: none;
+    padding: 14px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.form-btn:hover {
+    transform: scale(1.08);
+}
+
+
